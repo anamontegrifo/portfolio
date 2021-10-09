@@ -7,7 +7,6 @@
 		padding: 10px 20px;
 		height: 10%;
 		background-color: $medium;
-		border-bottom: 2px solid $yellow;
 		font-family: $regular;
 	}
 	&__list {
@@ -23,5 +22,13 @@
 }
 .hero {
 	height: 90%;
-	background-color: $white;
+background: url('../images/kiwihug.jpg') no-repeat center;
+background-size:cover;
+
+&__image {
+	width: 140px;
+	position: relative;
+	top: 40px;
+	left: 40px;
+}
 }

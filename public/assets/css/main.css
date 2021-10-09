@@ -129,6 +129,9 @@ table {
 a {
   text-decoration: none; }
 
+body {
+  font-family: "Raleway", sans-serif; }
+
 .header {
   height: 100vh; }
   .header__nav {
@@ -137,8 +140,7 @@ a {
     align-items: center;
     padding: 10px 20px;
     height: 10%;
-    background-color: #1F4068;
-    border-bottom: 2px solid #FEC260;
+    background-color: #323232;
     font-family: "Raleway", sans-serif; }
   .header__list {
     display: flex;
@@ -151,6 +153,12 @@ a {
 
 .hero {
   height: 90%;
-  background-color: #F9F9F9; }
+  background: url("../images/kiwihug.jpg") no-repeat center;
+  background-size: cover; }
+  .hero__image {
+    width: 140px;
+    position: relative;
+    top: 40px;
+    left: 40px; }
 
 /*# sourceMappingURL=main.css.map */
