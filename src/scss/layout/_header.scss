@@ -1,4 +1,27 @@
 .header {
 	height: 100vh;
-	background-color: $dark;
+	&__nav {
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		padding: 10px 20px;
+		height: 10%;
+		background-color: $medium;
+		border-bottom: 2px solid $yellow;
+		font-family: $regular;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		color: $white;
+		&--link{
+			color: $white;
+		}
+	}
+}
+.hero {
+	height: 90%;
+	background-color: $white;
 }

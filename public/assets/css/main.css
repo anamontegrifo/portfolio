@@ -129,4 +129,28 @@ table {
 a {
   text-decoration: none; }
 
+.header {
+  height: 100vh; }
+  .header__nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10%;
+    background-color: #1F4068;
+    border-bottom: 2px solid #FEC260;
+    font-family: "Raleway", sans-serif; }
+  .header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #F9F9F9; }
+    .header__list--link {
+      color: #F9F9F9; }
+
+.hero {
+  height: 90%;
+  background-color: #F9F9F9; }
+
 /*# sourceMappingURL=main.css.map */
