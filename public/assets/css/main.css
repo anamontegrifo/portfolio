@@ -133,15 +133,16 @@ body {
   font-family: "Raleway", sans-serif; }
 
 .header {
-  height: 100vh; }
-  .header__nav {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 10px 20px;
-    height: 10%;
-    background-color: #323232;
-    font-family: "Raleway", sans-serif; }
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100vw;
+  height: 50px;
+  z-index: 1;
+  background-color: #323232;
+  font-family: "Raleway", sans-serif; }
   .header__list {
     display: flex;
     justify-content: center;
@@ -149,16 +150,61 @@ body {
     gap: 20px;
     color: #F9F9F9; }
     .header__list--link {
-      color: #F9F9F9; }
+      color: #F9F9F9;
+      position: relative; }
+      .header__list--link::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #F9F9F9;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out; }
+      .header__list--link:hover::before {
+        transform-origin: left;
+        transform: scaleX(1); }
 
 .hero {
-  height: 90%;
-  background: url("../images/kiwihug.jpg") no-repeat center;
-  background-size: cover; }
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  padding: 20px; }
   .hero__image {
-    width: 140px;
-    position: relative;
-    top: 40px;
-    left: 40px; }
+    width: 100%; }
+  .hero__title {
+    font-family: "Taviraj", serif;
+    font-size: 2em; }
+  .hero__text {
+    font-size: 1em; }
+
+.about {
+  position: relative;
+  height: 100vh;
+  background-color: azure; }
+
+#about {
+  position: absolute;
+  top: -50px; }
+
+.projects {
+  position: relative;
+  height: 100vh; }
+
+#projects {
+  position: absolute;
+  top: -50px; }
+
+.contact {
+  position: relative;
+  height: 100vh;
+  background-color: azure; }
+
+#contact {
+  position: absolute;
+  top: -50px; }
 
 /*# sourceMappingURL=main.css.map */
