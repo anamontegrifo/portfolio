@@ -175,6 +175,8 @@ body {
   padding: 20px; }
   .hero__image {
     width: 100%; }
+  .hero__article {
+    background-color: coral; }
   .hero__title {
     font-family: "Taviraj", serif;
     font-size: 2em; }
@@ -183,8 +185,14 @@ body {
 
 .about {
   position: relative;
-  height: 100vh;
-  background-color: azure; }
+  height: 100vh; }
+  .about__template {
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    background-color: coral;
+    color: #F9F9F9;
+    background-size: cover; }
 
 #about {
   position: absolute;

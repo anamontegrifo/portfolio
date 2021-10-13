@@ -1,7 +1,15 @@
 .about {
 	position: relative;
 	height: 100vh;
-	background-color:azure;
+
+	&__template {
+		width: 100vw;
+		height: 100vh;
+		padding: 30px;
+	background-color:coral;
+	color: $white;
+		background-size: cover;
+	}
 }
 
 #about {
