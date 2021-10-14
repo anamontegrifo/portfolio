@@ -175,20 +175,39 @@ body {
 
 .hero {
   height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  padding: 20px; }
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  background-color: #F9F9F9; }
   .hero__image {
-    width: 100%; }
+    background-color: #F9F9F9; }
+    .hero__image:hover {
+      background-color: #55AE95; }
+  .hero__avatar {
+    width: 80%; }
   .hero__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    height: 100%;
     background-color: #55AE95;
     color: #F9F9F9; }
+    .hero__article:hover {
+      background-color: #F9F9F9;
+      color: #55AE95; }
   .hero__title {
     font-family: "Taviraj", serif;
     font-size: 2em; }
   .hero__text {
     font-size: 1em; }
+  @media all and (min-width: 768px) {
+    .hero {
+      display: grid;
+      grid-template-rows: none;
+      grid-template-columns: 1fr 1fr;
+      align-content: center; } }
 
 .about {
   position: relative;

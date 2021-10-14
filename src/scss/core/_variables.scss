@@ -10,7 +10,18 @@ $white: #F9F9F9;
 $medium: #3F4D71;
 $orange: #FFAC8E;
 $pink: #FD7792;
-$cream: #55AE95;
+$green: #55AE95;
 
 
+// media queries for tablet and desktop
+@mixin tablet {
+	@media all and (min-width:768px) {
+			@content
+	}
+}; 
 
+@mixin desktop {
+	@media all and (min-width:1200px) {
+			@content
+	}
+}; 
