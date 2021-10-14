@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,6 +130,11 @@ table {
 a {
   text-decoration: none; }
 
+html {
+  scroll-behavior: smooth;
+  /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+ para probar la diferencia con y sin scroll suavizado*/ }
+
 body {
   font-family: "Raleway", sans-serif; }
 
@@ -141,7 +147,7 @@ body {
   width: 100vw;
   height: 50px;
   z-index: 1;
-  background-color: #323232;
+  background-color: #3F4D71;
   font-family: "Raleway", sans-serif; }
   .header__list {
     display: flex;
@@ -176,7 +182,8 @@ body {
   .hero__image {
     width: 100%; }
   .hero__article {
-    background-color: coral; }
+    background-color: #55AE95;
+    color: #F9F9F9; }
   .hero__title {
     font-family: "Taviraj", serif;
     font-size: 2em; }
@@ -190,7 +197,7 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 30px;
-    background-color: coral;
+    background-color: #FFAC8E;
     color: #F9F9F9;
     background-size: cover; }
 
@@ -209,7 +216,8 @@ body {
 .contact {
   position: relative;
   height: 100vh;
-  background-color: azure; }
+  background-color: #FD7792;
+  color: #F9F9F9; }
 
 #contact {
   position: absolute;
