@@ -1,35 +1,33 @@
 .hero {
+	position: relative;
 	height: 100vh;
-	width: 100vw;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	align-items: center;
-	background-color: $white;
+	justify-items: center;
 	&__image {
-		background-color: $white;
-		&:hover {
-			background-color: $green;
+		align-self: flex-end;
+		@include tablet {
+			align-self: flex-start;
 		}
 	}
 	&__avatar {
-		width: 80%;
+		width: 100%;
+		max-width: 360px;
 	}
 	&__article {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		padding: 30px;
+		justify-content: flex-start;
 		height: 100%;
-		background-color: $green;
-		color: $white;
-		&:hover {
-			background-color: $white;
-			color: $green;
+		@include tablet {
+			justify-content: flex-end;
 		}
 	}
 	&__title {
 		font-family: $special;
+		font-weight: bold;
 		font-size: 2em;
+		color: $orange;
 	}
 	&__text {
 		font-size: 1em;
@@ -40,4 +38,8 @@
 		grid-template-columns: 1fr 1fr;
 		align-content: center;
 	}
+}
+#home {
+	position: absolute;
+	top: -50px;
 }

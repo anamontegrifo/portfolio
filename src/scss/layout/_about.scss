@@ -1,18 +1,16 @@
 .about {
 	position: relative;
+	box-sizing: border-box;
 	height: 100vh;
-
-	&__template {
-		width: 100vw;
-		height: 100vh;
-		padding: 30px;
-	background-color:$orange;
-	color: $white;
-		background-size: cover;
+	&__title {
+		font-family: $special;
+		font-weight: bold;
+		font-size: 2em;
+		color: $green;
 	}
 }
 
 #about {
 	position: absolute;
-	top: -50px
+	top: -50px;
 }
