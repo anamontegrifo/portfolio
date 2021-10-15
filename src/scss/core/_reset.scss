@@ -135,3 +135,6 @@ html {
  /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
  para probar la diferencia con y sin scroll suavizado*/
 }
+a:link, a:visited, a:active {
+	text-decoration:none;
+}

@@ -1,33 +1,58 @@
 .about {
 	position: relative;
 	box-sizing: border-box;
-	height: 100vh;
+	min-height: 100vh;
 	&__title {
 		@include sectionTitle();
 		color: $green;
 	}
 	&__container {
-		height: 50vh;
 		background-color: $green;
 		border-radius: 25px;
-		margin-top: 15px;
+		margin: 20px 0;
 		padding: 20px;
+		box-shadow: 5px 5px 8px $medium;
 		&--title {
-			@include sectionTitle();
+			@include containerTitle();
 			color: $white;
 		}
 	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
 	&__skills {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 75px;
-		height: 75px;
+		width: 80px;
+		height: 80px;
 		background-color: $white;
+		box-shadow: 2px 2px 5px $medium;
+		font-weight: bold;
 		border-radius: 50%;	
 		&--image {
 			width: 80%;
-		
+		}
+	}
+	&__comp {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 160px;
+		height: 100px;
+		background-color: $white;
+		box-shadow: 2px 2px 5px $medium;
+		border-radius: 10%;	
+		padding: 10px;
+		color:$medium;
+		&--icon {
+			margin-bottom: 5px;
+			font-size: 30px;
 		}
 	}
 }

@@ -136,16 +136,25 @@ html {
   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
  para probar la diferencia con y sin scroll suavizado*/ }
 
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
 body {
   font-family: "Raleway", sans-serif;
   color: #3F4D71;
-  background-color: #F9F9F9; }
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .page-wrapper {
   padding: 20px; }
   @media all and (min-width: 768px) {
     .page-wrapper {
       padding: 40px; } }
+  @media all and (min-width: 1200px) {
+    .page-wrapper {
+      max-width: 1200px; } }
 
 .header {
   position: fixed;
@@ -183,8 +192,8 @@ body {
         transform: scaleX(1); }
 
 .hero {
+  min-height: 100vh;
   position: relative;
-  height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: center; }
@@ -194,8 +203,10 @@ body {
       .hero__image {
         align-self: flex-start; } }
   .hero__avatar {
-    width: 100%;
-    max-width: 360px; }
+    width: 280px; }
+    @media all and (min-width: 768px) {
+      .hero__avatar {
+        width: 360px; } }
   .hero__article {
     display: flex;
     flex-direction: column;
@@ -207,8 +218,8 @@ body {
   .hero__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #FFAC8E; }
   .hero__text {
     font-size: 1em; }
@@ -226,35 +237,58 @@ body {
 .about {
   position: relative;
   box-sizing: border-box;
-  height: 100vh; }
+  min-height: 100vh; }
   .about__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #55AE95; }
   .about__container {
-    height: 50vh;
     background-color: #55AE95;
     border-radius: 25px;
-    margin-top: 15px;
-    padding: 20px; }
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 5px 5px 8px #3F4D71; }
     .about__container--title {
       font-family: "Life Savers", cursive;
       font-weight: bold;
-      font-size: 2rem;
-      margin-bottom: 5px;
+      font-size: 1.5em;
+      margin-bottom: 10px;
       color: #F9F9F9; }
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; }
   .about__skills {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     background-color: #F9F9F9;
+    box-shadow: 2px 2px 5px #3F4D71;
+    font-weight: bold;
     border-radius: 50%; }
     .about__skills--image {
       width: 80%; }
+  .about__comp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+    height: 100px;
+    background-color: #F9F9F9;
+    box-shadow: 2px 2px 5px #3F4D71;
+    border-radius: 10%;
+    padding: 10px;
+    color: #3F4D71; }
+    .about__comp--icon {
+      margin-bottom: 5px;
+      font-size: 30px; }
 
 #about {
   position: absolute;
@@ -262,13 +296,52 @@ body {
 
 .projects {
   position: relative;
-  height: 100vh; }
+  min-height: 100vh; }
   .projects__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #FD7792; }
+  .projects__container {
+    margin-top: 15px;
+    padding: 20px; }
+    .projects__container--title {
+      font-family: "Life Savers", cursive;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #F9F9F9; }
+  .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; }
+  .projects__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px;
+    width: 240px;
+    height: 240px;
+    box-shadow: 2px 2px 5px #3F4D71;
+    font-weight: bold;
+    border-radius: 10%;
+    background-image: url("../images/series.png");
+    background-position: center;
+    background-size: cover; }
+    .projects__skills--button {
+      border: none;
+      width: 80px;
+      border-radius: 20%;
+      height: 30px;
+      box-shadow: 1px 1px 5px #3F4D71;
+      color: #3F4D71; }
+    .projects__skills:hover {
+      background-image: none;
+      background-color: #FD7792; }
 
 #projects {
   position: absolute;
@@ -280,8 +353,8 @@ body {
   .contact__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #4462af; }
 
 #contact {

@@ -1,9 +1,51 @@
 .projects {
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 	&__title {
 		@include sectionTitle();
 		color: $pink;
+	}
+	&__container {
+		margin-top: 15px;
+		padding: 20px;
+		&--title {
+			@include containerTitle();
+			color: $white;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
+	&__skills {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		gap: 10px;
+		padding: 10px;
+		width: 240px;
+		height: 240px;
+		box-shadow: 2px 2px 5px $medium;
+		font-weight: bold;
+		border-radius: 10%;	
+		background-image: url('../images/series.png');
+		background-position: center;
+    background-size: cover;
+		&--button {
+			border: none;
+			width: 80px;
+			border-radius: 20%;	
+			height: 30px;
+			box-shadow: 1px 1px 5px $medium;
+			color: $medium;
+		}
+		&:hover {
+			background-image: none;
+			background-color: $pink;
+		}
 	}
 }
 
