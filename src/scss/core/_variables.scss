@@ -14,15 +14,4 @@ $pink: #FD7792;
 $green: #55AE95;
 
 
-// media queries for tablet and desktop
-@mixin tablet {
-	@media all and (min-width:768px) {
-			@content
-	}
-}; 
 
-@mixin desktop {
-	@media all and (min-width:1200px) {
-			@content
-	}
-}; 

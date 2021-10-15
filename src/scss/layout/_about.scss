@@ -3,10 +3,32 @@
 	box-sizing: border-box;
 	height: 100vh;
 	&__title {
-		font-family: $special;
-		font-weight: bold;
-		font-size: 2em;
+		@include sectionTitle();
 		color: $green;
+	}
+	&__container {
+		height: 50vh;
+		background-color: $green;
+		border-radius: 25px;
+		margin-top: 15px;
+		padding: 20px;
+		&--title {
+			@include sectionTitle();
+			color: $white;
+		}
+	}
+	&__skills {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 75px;
+		height: 75px;
+		background-color: $white;
+		border-radius: 50%;	
+		&--image {
+			width: 80%;
+		
+		}
 	}
 }
 

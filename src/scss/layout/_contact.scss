@@ -2,9 +2,7 @@
 	position: relative;
 	height: 100vh;
 	&__title {
-		font-family: $special;
-		font-weight: bold;
-		font-size: 2em;
+		@include sectionTitle();
 		color: $blue;
 	}
 }

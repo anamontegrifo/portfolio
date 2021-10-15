@@ -207,7 +207,8 @@ body {
   .hero__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 5px;
     color: #FFAC8E; }
   .hero__text {
     font-size: 1em; }
@@ -229,8 +230,31 @@ body {
   .about__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 5px;
     color: #55AE95; }
+  .about__container {
+    height: 50vh;
+    background-color: #55AE95;
+    border-radius: 25px;
+    margin-top: 15px;
+    padding: 20px; }
+    .about__container--title {
+      font-family: "Life Savers", cursive;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 5px;
+      color: #F9F9F9; }
+  .about__skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #F9F9F9;
+    border-radius: 50%; }
+    .about__skills--image {
+      width: 80%; }
 
 #about {
   position: absolute;
@@ -242,7 +266,8 @@ body {
   .projects__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 5px;
     color: #FD7792; }
 
 #projects {
@@ -255,7 +280,8 @@ body {
   .contact__title {
     font-family: "Life Savers", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 5px;
     color: #4462af; }
 
 #contact {

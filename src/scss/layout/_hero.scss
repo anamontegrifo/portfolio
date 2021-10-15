@@ -24,9 +24,7 @@
 		}
 	}
 	&__title {
-		font-family: $special;
-		font-weight: bold;
-		font-size: 2em;
+		@include sectionTitle();
 		color: $orange;
 	}
 	&__text {

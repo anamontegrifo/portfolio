@@ -1,0 +1,26 @@
+// media queries for tablet and desktop
+@mixin tablet {
+	@media all and (min-width:768px) {
+			@content
+	}
+}; 
+
+@mixin desktop {
+	@media all and (min-width:1200px) {
+			@content
+	}
+}; 
+
+@mixin sectionTitle () {
+	font-family: $special;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 5px;
+}
+
+@mixin containerTitle () {
+	font-family: $special;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
