@@ -1,19 +1,36 @@
 .header {
-	position: fixed;
-	display: flex;
-	justify-content: right;
-	align-items: center;
-	padding: 10px 20px;
 	width: 100vw;
-	height: 50px;
-	z-index: 1;
-	background-color: $medium;
+	z-index: 2;
 	font-family: $regular;
+
+	&__button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 50px;
+		width: 50px;
+		padding: 10px;
+		&--icon {
+			height: 90%;
+		}
+	}
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		padding: 5px;
+		background-color: $medium;
+	}
 	&__list {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 20px;
+		font-family: $special;
 		color: $white;
 		&--link {
 			color: $white;
@@ -37,4 +54,7 @@
 			}
 		}
 	}
+}
+.hidden {
+	display: none;
 }

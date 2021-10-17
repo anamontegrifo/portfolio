@@ -25,7 +25,12 @@
 
 <body>
 	<header class="header">
-		<nav class="header__nav">
+		<div class="header__button js-button"><img class="header__button--icon" src="../assets/images/ico-menu.svg" alt="">
+		</div>
+
+		<nav class="header__nav js-nav">
+			<div class="header__button js-button"><img class="header__button--icon" src="../assets/images/letterx.svg" alt="">
+			</div>
 			<ul class="header__list">
 				<li class="header__list--item"><a class="header__list--link" href="#home">Inicio</a></li>
 				<li class="header__list--item"><a class="header__list--link" href="#about">Sobre mi</a></li>
@@ -34,8 +39,9 @@
 			</ul>
 		</nav>
 	</header>
-	<span id="home"></span>
+
 	<section class="hero page-wrapper">
+		<span id="home"></span>
 		<div class="hero__image">
 			<!-- <img class="hero__avatar" src='https://doodleipsum.com/700x700/avatar?i=d59e19b22f80201f19902ede65eb87fa'
 				alt="image-profile"> -->
@@ -188,6 +194,7 @@
 				soluta nostrum esse explicabo doloremque molestiae! Dolor perspiciatis suscipit placeat!</p>
 		</section>
 	</main>
+	<script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 
 </html>

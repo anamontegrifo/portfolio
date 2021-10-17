@@ -157,21 +157,34 @@ a {
       max-width: 1200px; } }
 
 .header {
-  position: fixed;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 10px 20px;
   width: 100vw;
-  height: 50px;
-  z-index: 1;
-  background-color: #3F4D71;
+  z-index: 2;
   font-family: "Raleway", sans-serif; }
+  .header__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    padding: 10px; }
+    .header__button--icon {
+      height: 90%; }
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    background-color: #3F4D71; }
   .header__list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-family: "Press Start 2P", cursive;
     color: #F9F9F9; }
     .header__list--link {
       color: #F9F9F9;
@@ -190,6 +203,9 @@ a {
       .header__list--link:hover::before {
         transform-origin: left;
         transform: scaleX(1); }
+
+.hidden {
+  display: none; }
 
 .hero {
   min-height: 100vh;
@@ -232,8 +248,7 @@ a {
       align-content: center; } }
 
 #home {
-  position: absolute;
-  top: -50px; }
+  position: absolute; }
 
 .about {
   position: relative;
@@ -293,7 +308,7 @@ a {
 
 #about {
   position: absolute;
-  top: -50px; }
+  top: 0px; }
 
 .projects {
   position: relative;
@@ -365,7 +380,7 @@ a {
 
 #projects {
   position: absolute;
-  top: -50px; }
+  top: 0px; }
 
 .contact {
   position: relative;
@@ -379,6 +394,6 @@ a {
 
 #contact {
   position: absolute;
-  top: -50px; }
+  top: 0px; }
 
 /*# sourceMappingURL=main.css.map */
