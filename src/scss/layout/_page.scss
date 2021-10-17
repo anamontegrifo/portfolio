@@ -18,3 +18,17 @@ a {
 		max-width: 1200px;
 	}
 }
+.top-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: $medium;
+	line-height: 45px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+}

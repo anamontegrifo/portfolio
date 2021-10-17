@@ -156,9 +156,23 @@ a {
     .page-wrapper {
       max-width: 1200px; } }
 
+.top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #3F4D71;
+  line-height: 45px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2; }
+
 .header {
   width: 100vw;
-  z-index: 2;
+  z-index: 3;
   font-family: "Raleway", sans-serif; }
   .header__button {
     position: absolute;
