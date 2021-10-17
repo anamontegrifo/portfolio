@@ -196,7 +196,8 @@ a {
   position: relative;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  justify-items: center; }
+  justify-items: center;
+  gap: 15px; }
   .hero__image {
     align-self: flex-end; }
     @media all and (min-width: 768px) {
@@ -216,9 +217,9 @@ a {
       .hero__article {
         justify-content: flex-end; } }
   .hero__title {
-    font-family: "Life Savers", cursive;
+    font-family: "Press Start 2P", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #FFAC8E; }
   .hero__text {
@@ -239,9 +240,9 @@ a {
   box-sizing: border-box;
   min-height: 100vh; }
   .about__title {
-    font-family: "Life Savers", cursive;
+    font-family: "Press Start 2P", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #55AE95; }
   .about__container {
@@ -251,9 +252,9 @@ a {
     padding: 20px;
     box-shadow: 5px 5px 8px #3F4D71; }
     .about__container--title {
-      font-family: "Life Savers", cursive;
+      font-family: "Press Start 2P", cursive;
       font-weight: bold;
-      font-size: 1.5em;
+      font-size: 1em;
       margin-bottom: 10px;
       color: #F9F9F9; }
   .about__list {
@@ -298,9 +299,9 @@ a {
   position: relative;
   min-height: 100vh; }
   .projects__title {
-    font-family: "Life Savers", cursive;
+    font-family: "Press Start 2P", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #FD7792; }
   .projects__container {
@@ -339,8 +340,8 @@ a {
         opacity: 1; }
     .projects__item--desc {
       grid-column: 1/3;
-      font-size: 30px;
-      font-family: "Life Savers", cursive;
+      font-size: 1em;
+      font-family: "Press Start 2P", cursive;
       color: #F9F9F9; }
     .projects__item--tech {
       grid-column: 1/3;
@@ -370,9 +371,9 @@ a {
   position: relative;
   height: 100vh; }
   .contact__title {
-    font-family: "Life Savers", cursive;
+    font-family: "Press Start 2P", cursive;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #4462af; }
 

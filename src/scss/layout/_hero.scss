@@ -4,6 +4,7 @@
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	justify-items: center;
+	gap:15px;
 	&__image {
 		align-self: flex-end;
 		@include tablet {
