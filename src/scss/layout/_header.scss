@@ -1,8 +1,7 @@
 .header {
 	width: 100vw;
 	z-index: 3;
-	font-family: $special;
-
+	font-family: $regular;
 	&__button {
 		position: absolute;
 		top: 0;
@@ -13,30 +12,52 @@
 		&--icon {
 			height: 90%;
 		}
+		@include tablet {
+			visibility: hidden;
+		}
 	}
 	&__nav {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 100vw;
-		height: 100vh;
-		padding: 5px;
+		padding: 5px 15px;
 		background-color: $medium;
-		font-size: 1.5em;
 	}
+	@include tablet {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
 	&__list {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		min-height: 100vh;
 		gap: 20px;
+		font-size: 24px;
 		color: $white;
 		&--link {
 			color: $white;
 		}
+		@include tablet {
+			display: flex;
+			flex-direction: row;
+			min-height: 50px;
+			justify-content: flex-end;
+			width: 100vw;
+			font-size: 16px;
+		}
+	}
+	@include tablet {
+		position: fixed;
+		height: 60px;
 	}
 }
 .hidden {
 	display: none;
+	@include tablet {
+		display: flex;
+	}
 }

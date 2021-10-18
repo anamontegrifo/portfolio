@@ -173,7 +173,7 @@ a {
 .header {
   width: 100vw;
   z-index: 3;
-  font-family: "Righteous", cursive; }
+  font-family: "Raleway", sans-serif; }
   .header__button {
     position: absolute;
     top: 0;
@@ -183,28 +183,49 @@ a {
     padding: 10px; }
     .header__button--icon {
       height: 90%; }
+    @media all and (min-width: 768px) {
+      .header__button {
+        visibility: hidden; } }
   .header__nav {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 5px;
-    background-color: #3F4D71;
-    font-size: 1.5em; }
+    padding: 5px 15px;
+    background-color: #3F4D71; }
+  @media all and (min-width: 768px) {
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; } }
   .header__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     gap: 20px;
+    font-size: 24px;
     color: #F9F9F9; }
     .header__list--link {
       color: #F9F9F9; }
+    @media all and (min-width: 768px) {
+      .header__list {
+        display: flex;
+        flex-direction: row;
+        min-height: 50px;
+        justify-content: flex-end;
+        width: 100vw;
+        font-size: 16px; } }
+  @media all and (min-width: 768px) {
+    .header {
+      position: fixed;
+      height: 60px; } }
 
 .hidden {
   display: none; }
+  @media all and (min-width: 768px) {
+    .hidden {
+      display: flex; } }
 
 .hero {
   min-height: 100vh;
@@ -317,6 +338,9 @@ a {
 #about {
   position: absolute;
   top: 0px; }
+  @media all and (min-width: 768px) {
+    #about {
+      top: -50px; } }
 
 .projects {
   position: relative;
@@ -384,6 +408,9 @@ a {
 #projects {
   position: absolute;
   top: 0px; }
+  @media all and (min-width: 768px) {
+    #projects {
+      top: -50px; } }
 
 .contact {
   position: relative;
@@ -398,5 +425,8 @@ a {
 #contact {
   position: absolute;
   top: 0px; }
+  @media all and (min-width: 768px) {
+    #contact {
+      top: -50px; } }
 
 /*# sourceMappingURL=main.css.map */
