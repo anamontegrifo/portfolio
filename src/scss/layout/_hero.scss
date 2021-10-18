@@ -27,16 +27,20 @@
 		justify-content: flex-start;
 		height: 100%;
 		@include tablet {
-			justify-content: flex-end;
+			justify-content:flex-end;
 		}
 	}
 	&__title {
-		@include sectionTitle();
-		color: $blue;
+		font-family: $special;
+		font-weight: bold;
+	font-size: 1.6em;
+		color: $black;
 
 		}
 	&__text {
-		font-size: 1em;
+		font-size: 1.2em;
+		color: $black;
+	
 	}
 	@include tablet {
 		display: grid;

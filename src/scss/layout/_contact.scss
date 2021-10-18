@@ -1,6 +1,7 @@
 .contact {
 	position: relative;
 	height: 100vh;
+	background-color: $salmon;
 	&__title {
 		@include sectionTitle();
 		color: $blue;
@@ -11,6 +12,6 @@
 	position: absolute;
 	top: 0px;
 	@include tablet {
-		top: -50px;
+		top: -60px;
 	}
 }
