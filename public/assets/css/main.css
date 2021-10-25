@@ -138,8 +138,8 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
-  color: #F9F9F9;
-  background-color: #3a3b3d;
+  color: #3a3b3d;
+  background-color: #e4e2e2;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -186,25 +186,29 @@ a {
       height: 90%; }
     @media all and (min-width: 768px) {
       .header__button {
-        visibility: hidden; } }
+        visibility: hidden;
+        background-color: #3a3b3d; } }
   .header__nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 5px 15px;
+    height: 100vh;
+    padding: 5px 20px;
     background-color: #3a3b3d;
     z-index: 5; }
-  @media all and (min-width: 768px) {
-    .header {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center; } }
+    @media all and (min-width: 768px) {
+      .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px; } }
   .header__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     gap: 20px;
     font-size: 24px;
     color: #F9F9F9; }
@@ -214,14 +218,17 @@ a {
       .header__list {
         display: flex;
         flex-direction: row;
-        min-height: 50px;
         justify-content: flex-end;
-        width: 100vw;
         font-size: 16px; } }
   @media all and (min-width: 768px) {
     .header {
       position: fixed;
       height: 60px; } }
+  .header__ssmm {
+    display: flex;
+    gap: 20px; }
+    .header__ssmm--icon {
+      color: #F9F9F9; }
 
 .hidden {
   display: none; }
@@ -261,11 +268,9 @@ a {
   .hero__title {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 1.6em;
-    color: #3a3b3d; }
+    font-size: 1.6em; }
   .hero__text {
-    font-size: 1.2em;
-    color: #3a3b3d; }
+    font-size: 1.2em; }
   @media all and (min-width: 768px) {
     .hero {
       display: grid;
@@ -305,7 +310,8 @@ a {
       font-weight: bold;
       font-size: 1.2em;
       margin: 10px 0;
-      background-color: #3a3b3d; }
+      background-color: #e4e2e2;
+      color: #FD7792; }
   .about__list {
     display: flex;
     flex-wrap: wrap;
@@ -317,18 +323,9 @@ a {
     justify-content: center;
     align-items: center;
     width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid #3a3b3d;
-    background-color: #F9F9F9;
-    box-shadow: 5px 5px 1px #3a3b3d; }
+    height: 80px; }
     .about__skills--image {
-      width: 80%; }
-    @media all and (min-width: 1200px) {
-      .about__skills {
-        background-color: #e4e2e2; }
-        .about__skills:hover {
-          background-color: #F9F9F9; } }
+      width: 90%; }
   .about__comp {
     display: flex;
     flex-direction: column;

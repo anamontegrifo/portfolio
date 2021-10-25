@@ -15,28 +15,31 @@
 		}
 		@include tablet {
 			visibility: hidden;
+			background-color: $black;
 		}
 	}
 	&__nav {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: space-around;
 		align-items: center;
-		padding: 5px 15px;
+		height: 100vh;
+		padding: 5px 20px;
 		background-color: $black;
 		z-index: 5;
+		@include tablet {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			height: 60px;
+		}
 	}
-	@include tablet {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
 	&__list {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		min-height: 100vh;
 		gap: 20px;
 		font-size: 24px;
 		color: $white;
@@ -46,15 +49,20 @@
 		@include tablet {
 			display: flex;
 			flex-direction: row;
-			min-height: 50px;
 			justify-content: flex-end;
-			width: 100vw;
 			font-size: 16px;
 		}
 	}
 	@include tablet {
 		position: fixed;
 		height: 60px;
+	}
+	&__ssmm {
+		display: flex;
+		gap: 20px;
+		&--icon {
+			color: $white;
+		}
 	}
 }
 .hidden {
