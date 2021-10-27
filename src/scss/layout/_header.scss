@@ -2,7 +2,6 @@
 	width: 100vw;
 	z-index: 4;
 	font-family: $special;
-	font-weight: bold;
 	&__button {
 		position: absolute;
 		top: 0;
@@ -41,16 +40,19 @@
 		justify-content: center;
 		align-items: center;
 		gap: 20px;
-		font-size: 24px;
+		font-size: 28px;
 		color: $white;
 		&--link {
 			color: $white;
+			&:active {
+				color: $salmon;
+			}
 		}
 		@include tablet {
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
-			font-size: 16px;
+			font-size: 20px;
 		}
 	}
 	@include tablet {
@@ -60,8 +62,15 @@
 	&__ssmm {
 		display: flex;
 		gap: 20px;
+		font-size: 28px;
 		&--icon {
 			color: $white;
+			&:active {
+				color: $salmon;
+			}
+		}
+		@include tablet {
+			font-size: 20px;
 		}
 	}
 }

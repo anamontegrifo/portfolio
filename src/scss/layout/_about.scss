@@ -15,7 +15,9 @@
 		margin: 20px 0;
 		&--title {
 			@include containerTitle();
-	
+		}
+		@include desktop {
+			max-width: 1000px;
 		}
 	}
 	&__list {
@@ -27,12 +29,19 @@
 	&__skills {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-end;
 		align-items: center;
-		width: 80px;
-		height: 80px;
+		text-align: center;
+		width: 90px;
+		height: 90px;
+		font-size: 12px;
 		&--image {
-			width: 90%;
+			width: 60px;
+		}
+		@include desktop {
+			&:hover {
+				transform: scale(1.2);
+			}
 		}
 	}
 	&__comp {
@@ -42,23 +51,18 @@
 		text-align: center;
 		width: 160px;
 		height: 100px;
-		background-color: $white;
-		box-shadow: 5px 5px 1px $black;
-		border: 3px solid $black;
+		background-color: $pinkOp;
 		padding: 10px;
-		color: $medium;
+		font-size: 14px;
 		&--icon {
 			margin-bottom: 5px;
 			font-size: 30px;
+			color: $grey;
 		}
 
 		@include desktop {
-			background-color: $grey;
-
 			&:hover {
-				// transform: scale(1.1);
-				color: $pink;
-				background-color: $white;
+				transform: scale(1.2);
 			}
 		}
 	}
