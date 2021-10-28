@@ -67,12 +67,16 @@
 	}
 	&__ssmm {
 		display: flex;
-		gap: 20px;
+		width: 200px;
+		gap: 10px;
 		font-size: 28px;
 		& li {
 			&:hover {
 				transform: scale(1.2);
 			}
+		}
+		&--link {
+		padding: 0 20px;
 		}
 		&--icon {
 			color: $white;

@@ -230,10 +230,13 @@ a {
       height: 60px; } }
   .header__ssmm {
     display: flex;
-    gap: 20px;
+    width: 200px;
+    gap: 10px;
     font-size: 28px; }
     .header__ssmm li:hover {
       transform: scale(1.2); }
+    .header__ssmm--link {
+      padding: 0 20px; }
     .header__ssmm--icon {
       color: #F9F9F9; }
       .header__ssmm--icon:active {
@@ -345,28 +348,35 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; }
+    gap: 20px; }
   .about__skills {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     font-size: 12px; }
     .about__skills--image {
-      width: 60px; }
+      width: 50px; }
+      @media all and (min-width: 768px) {
+        .about__skills--image {
+          width: 60px; } }
+    @media all and (min-width: 768px) {
+      .about__skills {
+        width: 90px;
+        height: 90px; } }
     @media all and (min-width: 1024px) {
       .about__skills:hover {
         transform: scale(1.2); } }
   .about__comp {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    width: 160px;
-    height: 100px;
+    width: 100px;
+    height: 120px;
     background-color: rgba(253, 119, 146, 0.8);
     padding: 10px;
     font-size: 14px; }
