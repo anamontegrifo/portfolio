@@ -208,13 +208,16 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 30px;
     gap: 20px;
     font-size: 28px;
     color: #F9F9F9; }
+    .header__list li:hover {
+      transform: scale(1.2); }
     .header__list--link {
       color: #F9F9F9; }
       .header__list--link:active {
-        color: #F2B08F; }
+        color: #FD7792; }
     @media all and (min-width: 768px) {
       .header__list {
         display: flex;
@@ -229,10 +232,12 @@ a {
     display: flex;
     gap: 20px;
     font-size: 28px; }
+    .header__ssmm li:hover {
+      transform: scale(1.2); }
     .header__ssmm--icon {
       color: #F9F9F9; }
       .header__ssmm--icon:active {
-        color: #F2B08F; }
+        color: #FD7792; }
     @media all and (min-width: 768px) {
       .header__ssmm {
         font-size: 20px; } }
@@ -248,22 +253,36 @@ a {
   position: relative;
   padding: 0 30px;
   display: grid;
-  grid-template-rows: 1.2fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
   justify-items: center;
   background: url("../images/hero-back.png") no-repeat center;
   background-size: cover;
-  gap: 15px;
+  gap: 10px;
   z-index: 3; }
   .hero__image {
+    position: relative;
+    height: 280px;
+    width: 220px;
     align-self: flex-end; }
     @media all and (min-width: 768px) {
       .hero__image {
-        justify-self: right; } }
+        justify-self: right;
+        height: 380px;
+        width: 300px; } }
   .hero__avatar {
+    position: absolute;
+    top: 0;
     width: 220px; }
     @media all and (min-width: 768px) {
       .hero__avatar {
         width: 300px; } }
+  .hero__macoff {
+    opacity: 0; }
+    @media all and (min-width: 1024px) {
+      .hero__macoff {
+        opacity: 1; } }
+    .hero__macoff:hover {
+      opacity: 0; }
   .hero__article {
     display: flex;
     flex-direction: column;
@@ -285,7 +304,7 @@ a {
       grid-template-columns: 1fr 1fr;
       align-content: center;
       padding: 0 50px; } }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1024px) {
     .hero {
       padding: 0 80px; } }
 
@@ -319,7 +338,7 @@ a {
       margin: 10px 0;
       background-color: #e4e2e2;
       color: #FD7792; }
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1024px) {
       .about__container {
         max-width: 1000px; } }
   .about__list {
@@ -338,7 +357,7 @@ a {
     font-size: 12px; }
     .about__skills--image {
       width: 60px; }
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1024px) {
       .about__skills:hover {
         transform: scale(1.2); } }
   .about__comp {
@@ -355,7 +374,7 @@ a {
       margin-bottom: 5px;
       font-size: 30px;
       color: #e4e2e2; }
-    @media all and (min-width: 1200px) {
+    @media all and (min-width: 1024px) {
       .about__comp:hover {
         transform: scale(1.2); } }
 

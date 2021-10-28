@@ -39,13 +39,19 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		height: 30px;
 		gap: 20px;
 		font-size: 28px;
 		color: $white;
+		& li {
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
 		&--link {
 			color: $white;
 			&:active {
-				color: $salmon;
+				color: $pink;
 			}
 		}
 		@include tablet {
@@ -63,10 +69,15 @@
 		display: flex;
 		gap: 20px;
 		font-size: 28px;
+		& li {
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
 		&--icon {
 			color: $white;
 			&:active {
-				color: $salmon;
+				color: $pink;
 			}
 		}
 		@include tablet {
