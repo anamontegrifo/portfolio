@@ -9,6 +9,7 @@
 		height: 50px;
 		width: 50px;
 		padding: 10px;
+		cursor: pointer;
 		&--icon {
 			height: 90%;
 		}
@@ -23,7 +24,7 @@
 		justify-content: space-around;
 		align-items: center;
 		height: 100vh;
-		padding: 5px 20px;
+		padding: 5px 30px;
 		background-color: $black;
 		z-index: 5;
 		@include tablet {
@@ -67,17 +68,16 @@
 	}
 	&__ssmm {
 		display: flex;
+		justify-content: flex-end;
 		width: 200px;
-		gap: 10px;
+		gap: 30px;
 		font-size: 28px;
 		& li {
 			&:hover {
 				transform: scale(1.2);
 			}
 		}
-		&--link {
-		padding: 0 20px;
-		}
+		
 		&--icon {
 			color: $white;
 			&:active {

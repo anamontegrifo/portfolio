@@ -5,8 +5,6 @@
 	display: grid;
 	grid-template-rows: 1.5fr 1fr;
 	justify-items: center;
-	background: url("../images/hero-back.png") no-repeat center;
-	background-size: cover;
 	gap: 10px;
 	z-index: 3;
 	&__image {
@@ -28,16 +26,6 @@
 			width: 300px;
 		}
 	}
-	&__macoff {
-		opacity: 0;
-		@include laptop {
-			opacity: 1;
-		}
-		&:hover {
-			opacity: 0;
-		}
-
-	}
 	&__article {
 		display: flex;
 		flex-direction: column;
@@ -51,6 +39,7 @@
 		font-family: $special;
 		font-weight: bold;
 		font-size: 1.6em;
+		color: $green;
 	}
 	&__text {
 		font-size: 1.2em;
