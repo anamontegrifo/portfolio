@@ -68,7 +68,7 @@
 	}
 	&__ssmm {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		width: 200px;
 		gap: 30px;
 		font-size: 28px;
@@ -85,6 +85,7 @@
 			}
 		}
 		@include tablet {
+			justify-content: flex-end;
 			font-size: 20px;
 		}
 	}

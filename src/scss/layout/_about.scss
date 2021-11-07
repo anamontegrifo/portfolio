@@ -6,6 +6,7 @@
 	min-height: 100vh;
 	&__title {
 		@include sectionTitle();
+		color: $pink;
 	}
 	&__container {
 		padding: 20px;
@@ -14,8 +15,9 @@
 		margin: 20px 0;
 		&--title {
 			@include containerTitle();
+			color: $medium;
 		}
-		@include laptop {
+		@include tablet {
 			max-width: 1000px;
 		}
 	}
@@ -41,7 +43,7 @@
 			}
 		}
 		&:hover {
-			transform: scale(1.2);
+			transform: scale(1.3);
 		}
 		@include tablet {
 			width: 90px;

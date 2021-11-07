@@ -14,9 +14,6 @@ a {
 	@include tablet {
 		padding: 30px 60px;
 	}
-	@include desktop {
-		max-width: 1200px;
-	}
 }
 .top-button {
 	display: flex;
@@ -31,4 +28,20 @@ a {
 	bottom: 15px;
 	right: 15px;
 	z-index: 2;
+}
+.fadeRight {
+	opacity: 0;
+  transform: translate(5vh, 0);
+  transition: all 1s;
+}
+
+.fadeLeft {
+	opacity: 0;
+  transform: translate(-5vh, 0vh);
+  transition: all 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
