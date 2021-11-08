@@ -181,7 +181,7 @@ html {
     opacity: 100%; } }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #3a3b3d;
   background-color: #F9F9F9;
   display: flex;
@@ -192,10 +192,13 @@ a {
   color: #3F4D71; }
 
 .page-wrapper {
-  padding: 30px 20px; }
+  padding: 20px 20px; }
   @media all and (min-width: 768px) {
     .page-wrapper {
-      padding: 30px 60px; } }
+      padding: 20px 40px; } }
+  @media all and (min-width: 1024px) {
+    .page-wrapper {
+      padding: 20px 120px; } }
 
 .top-button {
   display: flex;
@@ -213,13 +216,19 @@ a {
 
 .fadeRight {
   opacity: 0;
-  transform: translate(5vh, 0);
+  transform: translate(0, 10vh);
   transition: all 1s; }
+  @media all and (min-width: 768px) {
+    .fadeRight {
+      transform: translate(10vh, 0); } }
 
 .fadeLeft {
   opacity: 0;
-  transform: translate(-5vh, 0vh);
+  transform: translate(0, 10vh);
   transition: all 1s; }
+  @media all and (min-width: 768px) {
+    .fadeLeft {
+      transform: translate(-10vh, 0); } }
 
 .visible {
   opacity: 1;
@@ -228,7 +237,7 @@ a {
 .header {
   width: 100vw;
   z-index: 4;
-  font-family: "Fredoka One", cursive; }
+  font-family: "Space Mono", monospace; }
   .header__button {
     position: absolute;
     top: 0;
@@ -251,7 +260,8 @@ a {
     height: 100vh;
     padding: 5px 30px;
     background-color: #3a3b3d;
-    z-index: 5; }
+    z-index: 5;
+    border: #e4e2e2 solid 2px; }
     @media all and (min-width: 768px) {
       .header__nav {
         display: flex;
@@ -266,7 +276,7 @@ a {
     align-items: center;
     height: 30px;
     gap: 20px;
-    font-size: 28px;
+    font-size: 22px;
     color: #F9F9F9; }
     .header__list li:hover {
       transform: scale(1.2); }
@@ -279,7 +289,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        font-size: 20px; } }
+        font-size: 16px; } }
   @media all and (min-width: 768px) {
     .header {
       position: fixed;
@@ -288,8 +298,8 @@ a {
     display: flex;
     justify-content: center;
     width: 200px;
-    gap: 30px;
-    font-size: 28px; }
+    gap: 40px;
+    font-size: 36px; }
     .header__ssmm li:hover {
       transform: scale(1.2); }
     .header__ssmm--icon {
@@ -309,25 +319,26 @@ a {
 
 .hero {
   min-height: 100vh;
+  width: 100vw;
   position: relative;
-  padding: 0 30px;
   display: grid;
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: 2fr 1fr;
   justify-items: center;
   gap: 10px;
-  z-index: 3; }
+  z-index: 3;
+  background-color: #F9F9F9; }
   .hero__image {
     position: relative;
     align-self: flex-end;
-    width: 260px;
-    cursor: pointer; }
+    width: 250px; }
     @media all and (min-width: 768px) {
       .hero__image {
         justify-self: right;
         width: 320px; } }
     @media all and (min-width: 1024px) {
       .hero__image {
-        width: 360px; } }
+        width: 360px;
+        cursor: pointer; } }
   .hero__mac {
     width: 100%; }
   .hero__avatar {
@@ -349,10 +360,14 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    height: 100%; }
+    gap: 5px;
+    height: 100%;
+    padding: 20px 0;
+    font-family: "Space Mono", monospace; }
     @media all and (min-width: 768px) {
       .hero__article {
-        justify-content: flex-end; } }
+        justify-content: flex-end;
+        align-content: flex-start; } }
     @media all and (min-width: 1024px) {
       .hero__article {
         opacity: 0; } }
@@ -360,7 +375,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    height: 100%; }
+    gap: 5px;
+    height: 100%;
+    padding: 20px 0;
+    font-family: "Space Mono", monospace; }
     @media all and (min-width: 768px) {
       .hero__laptop {
         justify-content: flex-end; } }
@@ -369,18 +387,27 @@ a {
         -webkit-animation: 2s linear 0s normal forwards 1 pop;
         animation: 2s linear 0s normal forwards 1 pop; } }
   .hero__title {
-    font-family: "Fredoka One", cursive;
     font-weight: bold;
-    font-size: 1.6em;
-    color: #3F4D71; }
+    font-size: 2.2em;
+    color: #3a3b3d; }
+    .hero__title--name {
+      color: #55AE95; }
+    @media all and (min-width: 768px) {
+      .hero__title {
+        font-size: 3em; } }
   .hero__text {
-    font-size: 1.2em; }
+    font-size: 1em;
+    color: #3a3b3d; }
+    @media all and (min-width: 768px) {
+      .hero__text {
+        font-size: 1.2em; } }
   @media all and (min-width: 768px) {
     .hero {
       display: grid;
       grid-template-rows: none;
       grid-template-columns: 1fr 1fr;
       align-content: center;
+      justify-items: flex-start;
       padding: 0 50px; } }
   @media all and (min-width: 1024px) {
     .hero {
@@ -397,32 +424,47 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100vh; }
   .about__title {
-    font-family: "Fredoka One", cursive;
+    font-family: "Space Mono", monospace;
     font-size: 1.6em;
+    font-weight: bold;
     margin-bottom: 10px;
     color: #FD7792; }
   .about__container {
     padding: 20px;
     border-radius: 25px;
     background-color: #FD7792;
-    margin: 20px 0; }
+    margin: 20px 0;
+    max-width: 320px; }
     .about__container--title {
-      text-transform: uppercase;
       padding: 5px;
-      font-family: "Fredoka One", cursive;
-      font-size: 1.2em;
+      font-family: "Space Mono", monospace;
+      font-size: 18px;
+      margin-bottom: 10px;
       background-color: #e4e2e2;
       color: #3F4D71; }
     @media all and (min-width: 768px) {
       .about__container {
-        max-width: 1000px; } }
+        max-width: 500px; } }
+    @media all and (min-width: 1024px) {
+      .about__container {
+        max-width: 700px; } }
+  .about__leftCont {
+    align-self: center; }
+    @media all and (min-width: 768px) {
+      .about__leftCont {
+        align-self: flex-start; } }
+  .about__rightCont {
+    align-self: center; }
+    @media all and (min-width: 768px) {
+      .about__rightCont {
+        align-self: flex-end; } }
   .about__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
     gap: 20px; }
   .about__skills {
     display: flex;
@@ -449,9 +491,8 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    width: 110px;
-    height: 120px;
-    padding: 10px;
+    width: 100px;
+    height: 100px;
     font-size: 14px; }
     .about__comp--icon {
       margin-bottom: 5px;
@@ -471,10 +512,16 @@ a {
   position: relative;
   min-height: 100vh; }
   .projects__title {
-    font-family: "Fredoka One", cursive;
+    font-family: "Space Mono", monospace;
     font-size: 1.6em;
+    font-weight: bold;
     margin-bottom: 10px;
     color: #FEC260; }
+  .projects__adalab {
+    font-family: "Space Mono", monospace;
+    color: #FD7792;
+    font-weight: bold;
+    font-size: 18px; }
   .projects__container {
     margin-top: 15px; }
   .projects__list {
@@ -482,48 +529,55 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     gap: 30px; }
   .projects__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
     background-color: #FEC260;
     border-radius: 25px;
     padding: 20px;
     gap: 5px;
     border: none;
-    max-width: 300px; }
+    height: 380px;
+    max-width: 320px; }
     .projects__item--desc {
-      text-transform: uppercase;
       padding: 5px;
-      font-family: "Fredoka One", cursive;
-      font-size: 1.2em;
+      font-family: "Space Mono", monospace;
+      font-size: 18px;
+      margin-bottom: 10px;
       background-color: #e4e2e2;
       color: #3F4D71;
       background-color: #e4e2e2; }
     .projects__item--web {
       width: 100%; }
+    .projects__item--text {
+      font-size: 13px; }
     .projects__item--img {
       width: 100%;
       align-self: center; }
-    .projects__item--github {
-      width: 60px;
-      height: 25px;
+    .projects__item--links {
       font-size: 14px;
+      font-family: "Space Mono", monospace;
       line-height: 25px;
       text-align: center;
-      background-color: #F9F9F9;
-      font-family: "Fredoka One", cursive;
-      color: #3F4D71;
-      grid-column: 2/3;
-      grid-row: 4/5; }
+      align-self: flex-end;
+      justify-self: flex-end;
+      height: 25px; }
+    .projects__item--github {
+      margin-left: 10px;
+      padding: 5px;
+      background-color: #FEC260;
+      color: #3F4D71; }
       .projects__item--github:hover {
         color: #FEC260;
-        background-color: #FD7792;
+        background-color: #3a3b3d;
         cursor: pointer; }
     @media all and (min-width: 1024px) {
-      .projects__item:hover {
-        transform: scale(1.1); } }
+      .projects__item {
+        max-width: 360px; }
+        .projects__item:hover {
+          transform: scale(1.1); } }
 
 #projects {
   position: absolute;
@@ -534,11 +588,11 @@ a {
 
 .contact {
   position: relative;
-  height: 100vh;
-  background-color: #F2B08F; }
+  height: 100vh; }
   .contact__title {
-    font-family: "Fredoka One", cursive;
+    font-family: "Space Mono", monospace;
     font-size: 1.6em;
+    font-weight: bold;
     margin-bottom: 10px;
     color: #4462af; }
 

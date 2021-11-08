@@ -10,9 +10,12 @@ a {
 	color: $medium;
 }
 .page-wrapper {
-	padding: 30px 20px;
+	padding: 20px 20px;
 	@include tablet {
-		padding: 30px 60px;
+		padding: 20px 40px;
+	}
+	@include laptop {
+		padding: 20px 120px;
 	}
 }
 .top-button {
@@ -31,14 +34,20 @@ a {
 }
 .fadeRight {
 	opacity: 0;
-  transform: translate(5vh, 0);
+  transform: translate(0, 10vh);
   transition: all 1s;
+	@include tablet {
+		transform: translate(10vh, 0);
+	}
 }
 
 .fadeLeft {
 	opacity: 0;
-  transform: translate(-5vh, 0vh);
+  transform: translate(0, 10vh);
   transition: all 1s;
+	@include tablet {
+		transform: translate(-10vh, 0);
+	}
 }
 
 .visible {

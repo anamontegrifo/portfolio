@@ -1,7 +1,6 @@
 .contact {
 	position: relative;
 	height: 100vh;
-	background-color: $salmon;
 	&__title {
 		@include sectionTitle();
 		color: $blue;

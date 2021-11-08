@@ -27,6 +27,7 @@
 		padding: 5px 30px;
 		background-color: $black;
 		z-index: 5;
+		border: $grey solid 2px;
 		@include tablet {
 			display: flex;
 			flex-direction: row;
@@ -42,7 +43,7 @@
 		align-items: center;
 		height: 30px;
 		gap: 20px;
-		font-size: 28px;
+		font-size: 22px;
 		color: $white;
 		& li {
 			&:hover {
@@ -59,7 +60,7 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
-			font-size: 20px;
+			font-size: 16px;
 		}
 	}
 	@include tablet {
@@ -70,8 +71,8 @@
 		display: flex;
 		justify-content: center;
 		width: 200px;
-		gap: 30px;
-		font-size: 28px;
+		gap: 40px;
+		font-size: 36px;
 		& li {
 			&:hover {
 				transform: scale(1.2);

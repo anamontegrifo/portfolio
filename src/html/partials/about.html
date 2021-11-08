@@ -1,7 +1,7 @@
 <section class="about page-wrapper">
 	<span id="about"></span>
 	<h2 class="about__title">Cosas sobre mi</h2>
-	<p>
+	<p class="about__text">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et quidem
 		libero adipisci quisquam? Assumenda accusantium a laboriosam expedita
 		accusamus consectetur corporis repellendus voluptas dicta. A debitis
@@ -9,7 +9,7 @@
 		quibusdam repellat?
 	</p>
 
-	<div class="about__container">
+	<div class="about__container about__leftCont js-scroll fadeRight">
 		<h3 class="about__container--title">Habilidades técnicas</h3>
 		<ul class="about__list">
 			<include src="./skills.html" srcImage="./assets/images/html5.svg" altImage="Logo HTML" figcaption="HTML5">
@@ -54,7 +54,7 @@
 		</ul>
 	</div>
 
-	<div class="about__container">
+	<div class="about__container about__rightCont js-scroll fadeLeft">
 		<h3 class="about__container--title">Competencias</h3>
 		<ul class="about__list">
 			<include src="./competencies.html" icon="fab fa-leanpub" comp="Capacidad de aprendizaje continuo"></include>
@@ -65,6 +65,13 @@
 			</include>
 			<include src="./competencies.html" icon="fas fa-lightbulb" comp="Iniciativa en la resolución de problemas">
 			</include>
+			<include src="./competencies.html" icon="fas fa-sync" comp="Filosofía Agile y marco de trabajo Scrum">
+			</include>
+			<include src="./competencies.html" icon="fas fa-users" comp="Experiencia en trabajo en equipo">
+			</include>
+			<include src="./competencies.html" icon="fas fa-home" comp="Habituada a trabajar en remoto">
+			</include>
+
 		</ul>
 	</div>
 </section>
