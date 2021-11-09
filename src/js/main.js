@@ -2,18 +2,23 @@
 
 const navButtons = document.querySelectorAll('.js-button');
 const navSection = document.querySelector('.js-nav');
-const macImg = document.querySelector('.js-mac');
-const avatar = document.querySelector('.js-avatar');
+
+const computer = document.querySelector('.js-computer');
+const macVector = document.querySelector('.js-mac-on');
+const photo = document.querySelector('.js-photo');
 const article = document.querySelector('.js-article');
+
 const fadeElements = document.querySelectorAll('.js-scroll');
 const screenSize = window.innerHeight;
 
 const handlePresentation = () => {
-	avatar.classList.toggle('hidden-avatar');
-	article.classList.toggle('hero__article');
-	article.classList.toggle('hero__laptop');
+	macVector.classList.toggle('hidden-profile');
+	photo.classList.toggle('hidden-profile');
+	photo.classList.add('effect');
+	article.classList.add('effect');
+	article.classList.toggle('hidden-profile');
 };
-macImg.addEventListener('click', handlePresentation);
+computer.addEventListener('click', handlePresentation);
 
 const handleToogleNav = () => {
 	if (navSection.classList.contains('hidden')) {

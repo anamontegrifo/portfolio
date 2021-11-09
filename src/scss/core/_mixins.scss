@@ -48,3 +48,37 @@
 	90% {opacity: 0%;}
 	100% {opacity: 100%;}
 }
+@keyframes arrow1 {
+	0%, 100% {
+			color: $green;
+			transform: translate(0,0) rotate(45deg);
+	}
+
+	50% {
+			color: $yellow;
+			transform: translate(10px, 10px) rotate(45deg);
+	}
+}
+@keyframes arrow2 {
+  0%,
+  100% {
+		color: $green;
+    transform: translate(0, 0);
+  }
+
+  50% {
+		color: $yellow;
+    transform: translate(10px, 0);
+  }
+}
+@keyframes arrow3 {
+	0%, 100% {
+			color: $green;
+			transform: translate(0,0) rotate(90deg);
+	}
+
+	50% {
+			color: $yellow;
+			transform: translate(0, 10px) rotate(90deg);
+	}
+}
