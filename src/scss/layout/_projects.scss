@@ -5,9 +5,12 @@
 		@include sectionTitle();
 		color: $yellow;
 	}
+	&__text {
+		color: $black;
+	}
 	&__adalab {
 		font-family: $special;
-		color: $pink;
+		color: $yellow;
 		font-weight: bold;
 		font-size: 18px;
 	}
@@ -23,29 +26,29 @@
 		gap: 30px;
 	}
 	&__item {
-	display: grid;
-	grid-template-rows: auto auto 1fr auto;
+		display: grid;
+		grid-template-rows: auto auto 1fr auto;
 		background-color: $yellow;
-		border-radius: 25px;
-		padding: 20px;
+		border-radius: 5px;
+		padding: 10px;
 		gap: 5px;
 		border: none;
 		height: 380px;
 		max-width: 320px;
 		&--desc {
-			@include containerTitle();
-			color: $medium;
-			background-color: $grey;
+			font-family: $special;
+			color: $black;
+	
 		}
 		&--web {
-		width: 100%;
+			width: 100%;
 		}
 		&--text {
-			font-size: 13px; 
+			font-size: 13px;
 		}
 		&--img {
 			width: 100%;
-		align-self: center;
+			align-self: center;
 		}
 		&--links {
 			font-size: 14px;
@@ -53,27 +56,27 @@
 			line-height: 25px;
 			text-align: center;
 			align-self: flex-end;
-		justify-self: flex-end;
+			justify-self: flex-end;
 			height: 25px;
+			color: $black;
 		}
 		&--github {
 			margin-left: 10px;
 			padding: 5px;
 			background-color: $yellow;
-			color: $medium;
-		
+			border-radius: 2px;
 			&:hover {
 				color: $yellow;
-				background-color: $black;
+				background-color: $white;
 				cursor: pointer;
 			}
 		}
 		@include laptop {
 			max-width: 360px;
-		&:hover {
-			transform: scale(1.1);
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
-	}
 	}
 }
 

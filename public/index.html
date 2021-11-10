@@ -53,17 +53,14 @@
 			</p>
 		</article>
 		<div class="hero__click">
-			<div class="hero__click--1"><i class="fas fa-play"></i></div>
-			<div class="hero__click--2"><i class="fas fa-play"></i></div>
-			<div class="hero__click--3"><i class="fas fa-play"></i></div>
+			<div class="hero__click--1 js-click"><i class="fas fa-play"></i></div>
+			<div class="hero__click--2 js-click"><i class="fas fa-play"></i></div>
+			<div class="hero__click--3 js-click"><i class="fas fa-play"></i></div>
 			<div class="hero__computer js-computer">
 				<img class="hero__mac" src='./assets/images/macoff.png' alt="image-profile">
 				<img class="hero__mac hidden-profile js-mac-on" src='./assets/images/mac.gif' alt="image-profile">
 			</div>
 		</div>
-
-
-		<!-- <div class="hero__surface"></div> -->
 	</section>
 	<main>
 		<a href="#top" class="top-button" title="Go to top"><img src="./assets/images/ico-arrow.svg" alt="arrow" /></a>
@@ -209,67 +206,92 @@
 						<i class="about__comp--icon fas fa-home"></i>
 						<p>Habituada a trabajar en remoto</p>
 					</li>
+				</ul>
+			</div>
+			<div class="about__container about__leftCont js-scroll fadeRight">
+				<h3 class="about__container--title">Curiosidades</h3>
+				<ul class="about__list">
 
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-film"></i>
+						<p>Me gusta el cine europeo,</p>
+					</li>
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-cat"></i>
+						<p>tengo dos gatos,</p>
+					</li>
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-guitar"></i>
+						<p>y una guitarra siempre a mano.</p>
+					</li>
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-bullhorn"></i>
+						<p>Estoy involucrada en política</p>
+					</li>
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-fist-raised"></i>
+						<p>y en otros activismos.</p>
+					</li>
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-birthday-cake"></i>
+						<p>Soy buena con la repostería</p>
+					</li>
+					<li class="about__curios">
+						<i class="about__curios--icon fas fa-hands"></i>
+						<p>y puedo escribir en espejo.</p>
+					</li>
 				</ul>
 			</div>
 		</section>
 		<section class=" projects page-wrapper">
 			<span id="projects"></span>
 			<h2 class="projects__title">Proyectos</h2>
-			<p>Estos son mis proyectos personales y ejercicios hechos en el bootcamp de <a href="https://adalab.es/"
-					class="projects__adalab">Adalab.</a>
+			<p class="projects__text">Estos son mis proyectos personales y ejercicios hechos en el bootcamp de <a
+					href="https://adalab.es/" class="projects__adalab">Adalab.</a>
 			</p>
 			<div class="projects__container">
 				<ul class="projects__list">
 					<li class="js-scroll projects__item fadeRight">
-						<h3 class=" projects__item--desc">Buscador de series</h3>
-
-						<a href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/series.gif
-								alt=></a>
+						<a href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/series.gif"
+								alt="" /></a>
+						<h3 class="projects__item--desc">Buscador de series (JS)</h3>
 						<p class="projects__item--text">Busca tus series preferidas, selecciónalas, y se agregarán al listado de favoritas. Modifícalo y acccede siempre que quieras desde tu navegador. Web responsive realizada con Vanilla JS.</p>
 						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Buscador-Rick-Morty target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							<a class="projects__item--github" href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" target="_blank">Web <i class="fas fa-link"></i></a>
+							<a class="projects__item--github" href="https://github.com/anamontegrifo/Buscador-Rick-Morty" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
 						</div>
-
 					</li>
 
 					<li class="js-scroll projects__item fadeLeft">
-						<h3 class=" projects__item--desc">Rick & Morty</h3>
-
-						<a href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/rick.gif
-								alt=></a>
+						<a href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/rick.gif"
+								alt="" /></a>
+						<h3 class="projects__item--desc">Rick & Morty (React)</h3>
 						<p class="projects__item--text">Conoce a los personajes de la serie 'Rick & Morty', filtra y selecciona por distintos criterios. Web responsive realizada con React.</p>
 						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Buscador-Rick-Morty target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							<a class="projects__item--github" href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" target="_blank">Web <i class="fas fa-link"></i></a>
+							<a class="projects__item--github" href="https://github.com/anamontegrifo/Buscador-Rick-Morty" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
 						</div>
-
 					</li>
 
 					<li class="js-scroll projects__item fadeRight">
-						<h3 class=" projects__item--desc">Generador de tarjetas</h3>
-
-						<a href=https://awesome-profile-nodemonies.herokuapp.com/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/nodemonies.gif
-								alt=></a>
+						<a href="https://awesome-profile-nodemonies.herokuapp.com/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/nodemonies.gif"
+								alt="" /></a>
+						<h3 class="projects__item--desc">Generador de tarjetas</h3>
 						<p class="projects__item--text">Este proyecto grupal consiste en refactorizar un código heredado, generar los componentes necesarios usando React, desarrollar una API Rest, un servidor básico y crear un motor de plantillas.</p>
 						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://awesome-profile-nodemonies.herokuapp.com/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Generador-de-tarjetas-Refactoriza target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							<a class="projects__item--github" href="https://awesome-profile-nodemonies.herokuapp.com/" target="_blank">Web <i class="fas fa-link"></i></a>
+							<a class="projects__item--github" href="https://github.com/anamontegrifo/Generador-de-tarjetas-Refactoriza" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
 						</div>
-
 					</li>
 					<li class="js-scroll projects__item fadeLeft">
-						<h3 class=" projects__item--desc">Maquetación Spotify</h3>
-
-						<a href=https://anamontegrifo.github.io/Maquetacion-Spotify/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/spotify.gif
-								alt=></a>
+						<a href="https://anamontegrifo.github.io/Maquetacion-Spotify/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/spotify.gif"
+								alt="" /></a>
+						<h3 class="projects__item--desc">Maquetación Spotify</h3>
 						<p class="projects__item--text">Maquetación responsive de la 'landing page' de Spotify. HTML y CSS</p>
 						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://anamontegrifo.github.io/Maquetacion-Spotify/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Maquetacion-Spotify target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							<a class="projects__item--github" href="https://anamontegrifo.github.io/Maquetacion-Spotify/" target="_blank">Web <i class="fas fa-link"></i></a>
+							<a class="projects__item--github" href="https://github.com/anamontegrifo/Maquetacion-Spotify" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
 						</div>
-
 					</li>
 
 				</ul>

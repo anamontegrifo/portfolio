@@ -7,6 +7,7 @@ const computer = document.querySelector('.js-computer');
 const macVector = document.querySelector('.js-mac-on');
 const photo = document.querySelector('.js-photo');
 const article = document.querySelector('.js-article');
+const clicks = document.querySelectorAll('.js-click');
 
 const fadeElements = document.querySelectorAll('.js-scroll');
 const screenSize = window.innerHeight;
@@ -17,6 +18,9 @@ const handlePresentation = () => {
 	photo.classList.add('effect');
 	article.classList.add('effect');
 	article.classList.toggle('hidden-profile');
+	for (const click of clicks) {
+		click.classList.toggle('hidden-profile');
+	}
 };
 computer.addEventListener('click', handlePresentation);
 

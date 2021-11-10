@@ -25,9 +25,8 @@
 		align-items: center;
 		height: 100vh;
 		padding: 5px 30px;
-		background-color: $black;
+		background-color: $blue;
 		z-index: 5;
-		border: $grey solid 2px;
 		@include tablet {
 			display: flex;
 			flex-direction: row;
