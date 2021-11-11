@@ -10,10 +10,8 @@
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Lato:wght@100;300;400;700&display=swap"
 		rel="stylesheet">
-
 	<title>Ana Montegrifo - Portfolio</title>
 </head>
 
@@ -44,249 +42,283 @@
 	</header>
 	<section class="hero page-wrapper">
 		<span id="home"></span>
-		<div class="hero__image js-mac">
-
-			<img class="hero__mac" src='./assets/images/mac.gif' alt="image-profile">
-			<img class="hero__avatar hidden-avatar js-avatar" src='./assets/images/nav-01.png' alt="image-profile">
-
+		<div class="hero__portrait hidden-profile js-photo">
+			<img class="hero__portrait--photo" src='./assets/images/circle.png' alt="image-profile">
 		</div>
-		<article class="hero__article js-article">
+		<article class="hero__article hidden-profile js-article">
 			<h2 class="hero__title">¡Hola,<br> soy <span class="hero__title--name">Ana<br> Montegrifo</span>!</h2>
 			<p class="hero__text">Desarrolladora web front-end
 			</p>
 		</article>
+		<div class="hero__click">
+			<div class="hero__click--1 js-click"><i class="fas fa-play"></i></div>
+			<div class="hero__click--2 js-click"><i class="fas fa-play"></i></div>
+			<div class="hero__click--3 js-click"><i class="fas fa-play"></i></div>
+			<div class="hero__computer js-computer">
+				<img class="hero__mac" src='./assets/images/macoff.png' alt="image-profile">
+				<img class="hero__mac hidden-profile js-mac-on" src='./assets/images/mac.gif' alt="image-profile">
+			</div>
+		</div>
 	</section>
 	<main>
 		<a href="#top" class="top-button" title="Go to top"><img src="./assets/images/ico-arrow.svg" alt="arrow" /></a>
 
-		<section class="about page-wrapper">
-			<span id="about"></span>
-			<h2 class="about__title">Cosas sobre mi</h2>
-			<p class="about__text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et quidem
-				libero adipisci quisquam? Assumenda accusantium a laboriosam expedita
-				accusamus consectetur corporis repellendus voluptas dicta. A debitis
-				inventore magnam! Nesciunt sapiente eveniet soluta debitis, blanditiis
-				quibusdam repellat?
-			</p>
+		<div class="center">
+			<section class="about page-wrapper">
+				<span id="about"></span>
+				<h2 class="about__title">Cosas sobre mi</h2>
+				<p class="about__text">
+					Soy Ana y soy desarrolladora front-end junior. Me
+					formé en comunicación audiovisual y me diplomé en guion de cine y TV. Soy una persona creativa y en continuo
+					aprendizaje. ¡Mi curiosidad es inagotable!
+				</p>
+				<p class="about__text">Durante mi experiencia laboral me he dedicado principalmente a la maquetación de documentación
+					técnica y soporte administrativo en el sector químico.
+					Me interesa la tecnología y el diseño gráfico, y hace unos meses busqué la manera de meter todas mis habilidades en
+					una coctelera y encontrar
+					una alternativa
+					profesional interesante y estimulante.</p>
+				<p class="about__text">Ahí apareció el curso intensivo de programación web front-end de Adalab, ¡y cambió todo!</p>
 
-			<div class="about__container about__leftCont js-scroll fadeRight">
-				<h3 class="about__container--title">Habilidades técnicas</h3>
-				<ul class="about__list">
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/html5.svg alt=>
-							<figcaption>HTML5</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/css3.svg alt=>
-							<figcaption>CSS3</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/git.svg alt=>
-							<figcaption>Git</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/gulp.svg alt=>
-							<figcaption>Gulp</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/sass.svg alt=>
-							<figcaption>Sass</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/javascript.svg alt=>
-							<figcaption>JavaScript</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/github.svg alt=>
-							<figcaption>GitHub</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/npm.svg alt=>
-							<figcaption>Npm</figcaption>
-						</figure>
-					</li>
 
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/react.svg alt=>
-							<figcaption>React</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/bootstrap.svg alt=>
-							<figcaption>Bootstrap</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/nodejs.svg alt=>
-							<figcaption>Node.js</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/illustrator.svg alt=>
-							<figcaption>Illustrator</figcaption>
-						</figure>
-					</li>
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/indesign.svg alt=>
-							<figcaption>InDesign</figcaption>
-						</figure>
-					</li>
+				<div class=" about__container about__leftCont js-scroll fadeRight">
+					<h3 class="about__container--title">Habilidades técnicas</h3>
+					<ul class="about__list">
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/html5.svg alt=>
+								<figcaption>HTML5</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/css3.svg alt=>
+								<figcaption>CSS3</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/git.svg alt=>
+								<figcaption>Git</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/gulp.svg alt=>
+								<figcaption>Gulp</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/sass.svg alt=>
+								<figcaption>Sass</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/javascript.svg alt=>
+								<figcaption>JavaScript</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/github.svg alt=>
+								<figcaption>GitHub</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/npm.svg alt=>
+								<figcaption>Npm</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/react.svg alt=>
+								<figcaption>React</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/bootstrap.svg alt=>
+								<figcaption>Bootstrap</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/nodejs.svg alt=>
+								<figcaption>Node.js</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/illustrator.svg alt=>
+								<figcaption>Illustrator</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/indesign.svg alt=>
+								<figcaption>InDesign</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/photoshop.svg alt=>
+								<figcaption>Photoshop</figcaption>
+							</figure>
+						</li>
+						<li class="about__skills">
+							<figure>
+								<img class="about__skills--image" src=./assets/images/premiere.svg alt=>
+								<figcaption>Premiere</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<div class="about__container about__rightCont js-scroll fadeLeft">
+					<h3 class="about__container--title">Competencias</h3>
+					<ul class="about__list">
+						<li class="about__comp">
+							<i class="about__comp--icon fab fa-leanpub"></i>
+							<p>Capacidad de aprendizaje continuo</p>
+						</li>
+						<li class="about__comp">
+							<i class="about__comp--icon fas fa-pen-alt"></i>
+							<p>Redacción y escritura creativa</p>
+						</li>
+						<li class="about__comp">
+							<i class="about__comp--icon fas fa-object-group"></i>
+							<p>Diseño vectorial y edición de vídeo</p>
+						</li>
+						<li class="about__comp">
+							<i class="about__comp--icon fas fa-lightbulb"></i>
+							<p>Iniciativa en la resolución de problemas</p>
+						</li>
+						<li class="about__comp">
+							<i class="about__comp--icon fas fa-sync"></i>
+							<p>Filosofía Agile y marco de trabajo Scrum</p>
+						</li>
+						<li class="about__comp">
+							<i class="about__comp--icon fas fa-users"></i>
+							<p>Experiencia en trabajo en equipo</p>
+						</li>
+						<li class="about__comp">
+							<i class="about__comp--icon fas fa-home"></i>
+							<p>Habituada a trabajar en remoto</p>
+						</li>
+					</ul>
+				</div>
+				<div class="about__container about__leftCont js-scroll fadeRight">
+					<h3 class="about__container--title">Curiosidades</h3>
+					<ul class="about__list">
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-film"></i>
+							<p>Me gusta el cine europeo,</p>
+						</li>
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-cat"></i>
+							<p>tengo dos gatos</p>
+						</li>
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-guitar"></i>
+							<p>y una guitarra siempre a mano.</p>
+						</li>
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-bullhorn"></i>
+							<p> Me interesa la política</p>
+						</li>
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-fist-raised"></i>
+							<p>y la justicia social.</p>
+						</li>
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-birthday-cake"></i>
+							<p>Soy buena con la repostería</p>
+						</li>
+						<li class="about__curios">
+							<i class="about__curios--icon fas fa-hands"></i>
+							<p>y puedo escribir en espejo.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class=" projects page-wrapper">
+				<span id="projects"></span>
+				<h2 class="projects__title">Proyectos</h2>
+				<p class="projects__text">Estos son mis proyectos personales y ejercicios hechos en el bootcamp de <a
+						href="https://adalab.es/" class="projects__adalab">Adalab.</a>
+				</p>
+				<div class="projects__container">
+					<ul class="projects__list">
+						<li class="js-scroll projects__item fadeRight">
+							<a href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/series.gif"
+									alt="" /></a>
+							<h3 class="projects__item--desc">Buscador de series (JS)</h3>
+							<p class="projects__item--text">Busca tus series preferidas, selecciónalas, y se agregarán al listado de favoritas. Modifícalo y acccede siempre que quieras desde tu navegador. Web responsive realizada con Vanilla JS.</p>
+							<div class="projects__item--links">
+								<a class="projects__item--github" href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" target="_blank">Web <i class="fas fa-link"></i></a>
+								<a class="projects__item--github" href="https://github.com/anamontegrifo/Buscador-Rick-Morty" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							</div>
+						</li>
 
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/photoshop.svg alt=>
-							<figcaption>Photoshop</figcaption>
-						</figure>
-					</li>
+						<li class="js-scroll projects__item fadeLeft">
+							<a href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/rick.gif"
+									alt="" /></a>
+							<h3 class="projects__item--desc">Rick & Morty (React)</h3>
+							<p class="projects__item--text">Conoce a los personajes de la serie 'Rick & Morty', filtra y selecciona por distintos criterios. Web responsive realizada con React.</p>
+							<div class="projects__item--links">
+								<a class="projects__item--github" href="https://anamontegrifo.github.io/Buscador-Rick-Morty/#/" target="_blank">Web <i class="fas fa-link"></i></a>
+								<a class="projects__item--github" href="https://github.com/anamontegrifo/Buscador-Rick-Morty" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							</div>
+						</li>
 
-					<li class="about__skills">
-						<figure>
-							<img class="about__skills--image" src=./assets/images/premiere.svg alt=>
-							<figcaption>Premiere</figcaption>
-						</figure>
-					</li>
-				</ul>
-			</div>
+						<li class="js-scroll projects__item fadeRight">
+							<a href="https://awesome-profile-nodemonies.herokuapp.com/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/nodemonies.gif"
+									alt="" /></a>
+							<h3 class="projects__item--desc">Generador de tarjetas</h3>
+							<p class="projects__item--text">Este proyecto grupal consiste en refactorizar un código heredado, generar los componentes necesarios usando React, desarrollar una API Rest, un servidor básico y crear un motor de plantillas.</p>
+							<div class="projects__item--links">
+								<a class="projects__item--github" href="https://awesome-profile-nodemonies.herokuapp.com/" target="_blank">Web <i class="fas fa-link"></i></a>
+								<a class="projects__item--github" href="https://github.com/anamontegrifo/Generador-de-tarjetas-Refactoriza" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							</div>
+						</li>
+						<li class="js-scroll projects__item fadeLeft">
+							<a href="https://anamontegrifo.github.io/Maquetacion-Spotify/" class="projects__item--web" target="_blank"><img class="projects__item--img" src="./assets/images/spotify.gif"
+									alt="" /></a>
+							<h3 class="projects__item--desc">Maquetación Spotify</h3>
+							<p class="projects__item--text">Maquetación responsive de la 'landing page' de Spotify. HTML y CSS</p>
+							<div class="projects__item--links">
+								<a class="projects__item--github" href="https://anamontegrifo.github.io/Maquetacion-Spotify/" target="_blank">Web <i class="fas fa-link"></i></a>
+								<a class="projects__item--github" href="https://github.com/anamontegrifo/Maquetacion-Spotify" target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
+							</div>
+						</li>
 
-			<div class="about__container about__rightCont js-scroll fadeLeft">
-				<h3 class="about__container--title">Competencias</h3>
-				<ul class="about__list">
-					<li class="about__comp">
-						<i class="about__comp--icon fab fa-leanpub"></i>
-						<p>Capacidad de aprendizaje continuo</p>
-					</li>
-					<li class="about__comp">
-						<i class="about__comp--icon fas fa-pen-alt"></i>
-						<p>Experiencia en redacción y escritura creativa</p>
-					</li>
-					<li class="about__comp">
-						<i class="about__comp--icon fas fa-object-group"></i>
-						<p>Conocimientos de diseño vectorial y edición de vídeo</p>
-					</li>
-					<li class="about__comp">
-						<i class="about__comp--icon fas fa-lightbulb"></i>
-						<p>Iniciativa en la resolución de problemas</p>
-					</li>
-					<li class="about__comp">
-						<i class="about__comp--icon fas fa-sync"></i>
-						<p>Filosofía Agile y marco de trabajo Scrum</p>
-					</li>
-					<li class="about__comp">
-						<i class="about__comp--icon fas fa-users"></i>
-						<p>Experiencia en trabajo en equipo</p>
-					</li>
-					<li class="about__comp">
-						<i class="about__comp--icon fas fa-home"></i>
-						<p>Habituada a trabajar en remoto</p>
-					</li>
-
-				</ul>
-			</div>
-		</section>
-		<section class=" projects page-wrapper">
-			<span id="projects"></span>
-			<h2 class="projects__title">Proyectos</h2>
-			<p>Estos son mis proyectos personales y ejercicios hechos en el bootcamp de <a href="https://adalab.es/"
-					class="projects__adalab">Adalab.</a>
-			</p>
-			<div class="projects__container">
-				<ul class="projects__list">
-					<li class="js-scroll projects__item fadeRight">
-						<h3 class=" projects__item--desc">Buscador de series</h3>
-
-						<a href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/series.gif
-								alt=></a>
-						<p class="projects__item--text">Busca tus series preferidas, selecciónalas, y se agregarán al listado de favoritas. Modifícalo y acccede siempre que quieras desde tu navegador. Web responsive realizada con Vanilla JS.</p>
-						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Buscador-Rick-Morty target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
-						</div>
-
-					</li>
-
-					<li class="js-scroll projects__item fadeLeft">
-						<h3 class=" projects__item--desc">Rick & Morty</h3>
-
-						<a href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/rick.gif
-								alt=></a>
-						<p class="projects__item--text">Conoce a los personajes de la serie 'Rick & Morty', filtra y selecciona por distintos criterios. Web responsive realizada con React.</p>
-						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://anamontegrifo.github.io/Buscador-Rick-Morty/#/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Buscador-Rick-Morty target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
-						</div>
-
-					</li>
-
-					<li class="js-scroll projects__item fadeRight">
-						<h3 class=" projects__item--desc">Generador de tarjetas</h3>
-
-						<a href=https://awesome-profile-nodemonies.herokuapp.com/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/nodemonies.gif
-								alt=></a>
-						<p class="projects__item--text">Este proyecto grupal consiste en refactorizar un código heredado, generar los componentes necesarios usando React, desarrollar una API Rest, un servidor básico y crear un motor de plantillas.</p>
-						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://awesome-profile-nodemonies.herokuapp.com/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Generador-de-tarjetas-Refactoriza target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
-						</div>
-
-					</li>
-					<li class="js-scroll projects__item fadeLeft">
-						<h3 class=" projects__item--desc">Maquetación Spotify</h3>
-
-						<a href=https://anamontegrifo.github.io/Maquetacion-Spotify/ class="projects__item--web" target="_blank"><img class="projects__item--img" src=./assets/images/spotify.gif
-								alt=></a>
-						<p class="projects__item--text">Maquetación responsive de la 'landing page' de Spotify. HTML y CSS</p>
-						<div class="projects__item--links">
-							<a class="projects__item--github" href=https://anamontegrifo.github.io/Maquetacion-Spotify/ target="_blank">Web <i class="fas fa-link"></i></a>
-							<a class="projects__item--github" href=https://github.com/anamontegrifo/Maquetacion-Spotify target="_blank">Repositorio <i class="fab fa-github-alt"></i></a>
-						</div>
-
-					</li>
-
-				</ul>
-			</div>
-		</section>
-		<section class=" contact page-wrapper">
-			<span id="contact"></span>
-			<h2 class="contact__title">Contacto</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et quidem libero adipisci quisquam? Assumenda
-				accusantium a laboriosam expedita accusamus consectetur corporis repellendus voluptas dicta. A debitis
-				inventore
-				magnam! Nesciunt sapiente eveniet soluta debitis, blanditiis quibusdam repellat? Reiciendis consequatur omnis
-				aliquid ex alias perferendis iure molestias aut neque quisquam autem tenetur voluptatem at reprehenderit
-			</p>
-			<nav>
-				<ul>
-					<li><a href="https://www.linkedin.com/in/anamontegrifo/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-					</li>
-					<li><a href="https://github.com/anamontegrifo" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-					<li><a href="https://twitter.com/_anamontegrifo" target="_blank"> <i class="fab fa-twitter"></i></a></li>
-					<li>
-						<a href="mailto:amontegrifo@gmail.com"> <i class="fas fa-envelope"></i></i> </a>
-					</li>
-				</ul>
-			</nav>
-		</section>
+					</ul>
+				</div>
+			</section>
+			<section class=" contact page-wrapper">
+				<span id="contact"></span>
+				<h2 class="contact__title">Contacto</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et quidem libero adipisci quisquam? Assumenda
+					accusantium a laboriosam expedita accusamus consectetur corporis repellendus voluptas dicta. A debitis
+					inventore
+					magnam! Nesciunt sapiente eveniet soluta debitis, blanditiis quibusdam repellat? Reiciendis consequatur omnis
+					aliquid ex alias perferendis iure molestias aut neque quisquam autem tenetur voluptatem at reprehenderit
+				</p>
+				<nav>
+					<ul>
+						<li><a href="https://www.linkedin.com/in/anamontegrifo/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li><a href="https://github.com/anamontegrifo" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+						<li><a href="https://twitter.com/_anamontegrifo" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+						<li>
+							<a href="mailto:amontegrifo@gmail.com"> <i class="fas fa-envelope"></i></i> </a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+		</div>
 	</main>
 	<footer>
 		<a href="https://es.vecteezy.com/vectores-gratis/tecnolog%C3%ADa" target="blank">Tecnología Vectores por Vecteezy</a>
