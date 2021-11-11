@@ -1,18 +1,19 @@
 .projects {
 	position: relative;
 	min-height: 100vh;
+	max-width: 1440px;
 	&__title {
 		@include sectionTitle();
-		color: $yellow;
-	}
-	&__text {
-		color: $black;
+		color: $green;
 	}
 	&__adalab {
 		font-family: $special;
-		color: $yellow;
+		color: $green;
 		font-weight: bold;
-		font-size: 18px;
+		&:hover {
+			color: $yellow;
+		}
+
 	}
 	&__container {
 		margin-top: 15px;
@@ -28,17 +29,17 @@
 	&__item {
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
-		background-color: $yellow;
+		background-color: $white;
+		box-shadow: 1px 1px 10px $shadow;
 		border-radius: 5px;
-		padding: 10px;
+		padding: 15px;
 		gap: 5px;
 		border: none;
-		height: 380px;
+		height: 320px;
 		max-width: 320px;
 		&--desc {
 			font-family: $special;
-			color: $black;
-	
+			color: $green;
 		}
 		&--web {
 			width: 100%;
@@ -49,6 +50,7 @@
 		&--img {
 			width: 100%;
 			align-self: center;
+			border-radius: 10px;
 		}
 		&--links {
 			font-size: 14px;
@@ -58,24 +60,24 @@
 			align-self: flex-end;
 			justify-self: flex-end;
 			height: 25px;
-			color: $black;
+			
 		}
 		&--github {
 			margin-left: 10px;
 			padding: 5px;
-			background-color: $yellow;
+			color: $green;
 			border-radius: 2px;
 			&:hover {
 				color: $yellow;
-				background-color: $white;
+				background-color: $green;
 				cursor: pointer;
 			}
 		}
-		@include laptop {
-			max-width: 360px;
-			&:hover {
-				transform: scale(1.1);
-			}
+		&:hover {
+			transform: scale(1.1);
+		}
+		@include tablet {
+			height: 360px;
 		}
 	}
 }

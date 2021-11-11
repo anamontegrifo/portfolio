@@ -8,7 +8,7 @@
 	position: relative;
 	gap: 10px;
 	z-index: 3;
-	background-color: $white;
+	background-color: $grey;
 	&__click {
 		grid-column: 2/3;
 		grid-row: 3/4;
@@ -52,6 +52,8 @@
 	&__mac {
 		position: absolute;
 		width: 100px;
+		filter: drop-shadow(2px -1px 3px $shadow);
+		cursor: pointer;
 	}
 	&__portrait {
 		grid-column: 1/3;
@@ -61,39 +63,38 @@
 		width: 180px;
 		height: 180px;
 		border-radius: 50%;
-		margin-bottom: -60px;
-		margin-right: -100px;
+		margin-bottom: -40px;
+		margin-right: -60px;
 		&--photo {
 			height: 100%;
+			filter: drop-shadow(1px -1px 3px $shadow);
 		}
 		@include tablet {
-			width: 230px;
-		height: 230px;
-		margin-bottom: -70px;
-		margin-right: -110px;
+			width: 210px;
+		height: 210px;
+		margin-bottom: -60px;
+		margin-right: -90px;
 	
 		}
 	}
 	&__article {
 		grid-column: 1/3;
-		grid-row: 2/3;
-		font-family: $special;
+		grid-row: 2/3
 	}
 	&__title {
 		font-weight: bold;
-		font-size: 1.7em;
-		color: $black;
-		margin-bottom: 10px;
+		font-size: 1.4em;
+		margin-bottom: 5px;
+		font-family: $special;
 		&--name {
-			color: $blue;
+			color: $green;
 		}
 		@include tablet {
-			font-size: 2em;
+			font-size: 1.7em;
 		}
 	}
 	&__text {
 		font-size: 1em;
-		color: $black;
 		@include tablet {
 			font-size: 1.2em;
 		}

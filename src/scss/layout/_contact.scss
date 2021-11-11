@@ -1,9 +1,9 @@
 .contact {
 	position: relative;
-	height: 100vh;
+	max-width: 1440px;
 	&__title {
 		@include sectionTitle();
-		color: $blue;
+		color: $green;
 	}
 }
 

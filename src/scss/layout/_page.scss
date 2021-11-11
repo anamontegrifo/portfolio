@@ -1,7 +1,8 @@
 body {
 	font-family: $regular;
 	color: $black;
-	background-color: $white;
+	font-weight: 300;
+	background-color: $grey;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,6 +19,11 @@ a {
 		padding: 40px 120px;
 	}
 }
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .top-button {
 	display: flex;
 	justify-content: center;
@@ -25,7 +31,7 @@ a {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
-	background-color: $blue;
+	background-color: $yellow;
 	line-height: 45px;
 	position: fixed;
 	bottom: 15px;
@@ -34,19 +40,19 @@ a {
 }
 .fadeRight {
 	opacity: 0;
-  transform: translate(0, 10vh);
+  transform: translate(0, 15vh);
   transition: all 1s;
 	@include tablet {
-		transform: translate(10vh, 0);
+		transform: translate(15vh, 15vh);
 	}
 }
 
 .fadeLeft {
 	opacity: 0;
-  transform: translate(0, 10vh);
+  transform: translate(0, 15vh);
   transition: all 1s;
 	@include tablet {
-		transform: translate(-10vh, 0);
+		transform: translate(-15vh, 15vh);
 	}
 }
 
