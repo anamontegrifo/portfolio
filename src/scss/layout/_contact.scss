@@ -1,9 +1,26 @@
 .contact {
 	position: relative;
+	min-height: 100vh;
 	max-width: 1440px;
 	&__title {
 		@include sectionTitle();
 		color: $green;
+	}
+	&__links {
+		display: flex;
+		justify-content: space-around;
+		&--item {
+			width: 65px;
+			height: 80px;
+			background-color: $white;
+			box-shadow: 1px 1px 5px $shadow;
+			border-radius: 5px;
+			& i {
+				margin-bottom: 5px;
+				font-size: 30px;
+				color: $green;
+			}
+		}
 	}
 }
 

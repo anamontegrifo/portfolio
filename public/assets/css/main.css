@@ -669,6 +669,7 @@ a {
 
 .contact {
   position: relative;
+  min-height: 100vh;
   max-width: 1440px; }
   .contact__title {
     font-family: "Calistoga", cursive;
@@ -676,6 +677,19 @@ a {
     font-weight: bold;
     margin-bottom: 10px;
     color: #55AE95; }
+  .contact__links {
+    display: flex;
+    justify-content: space-around; }
+    .contact__links--item {
+      width: 65px;
+      height: 80px;
+      background-color: #F2F2F2;
+      box-shadow: 1px 1px 5px #7d7d7d;
+      border-radius: 5px; }
+      .contact__links--item i {
+        margin-bottom: 5px;
+        font-size: 30px;
+        color: #55AE95; }
 
 #contact {
   position: absolute;
