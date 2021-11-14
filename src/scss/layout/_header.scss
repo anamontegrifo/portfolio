@@ -52,7 +52,7 @@
 		&--link {
 			color: $white;
 			&:active {
-				color: $pink;
+				color: $yellow;
 			}
 		}
 		@include tablet {
@@ -81,7 +81,7 @@
 		&--icon {
 			color: $white;
 			&:active {
-				color: $pink;
+				color: $yellow;
 			}
 		}
 		@include tablet {

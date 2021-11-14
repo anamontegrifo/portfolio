@@ -336,7 +336,7 @@ a {
     .header__list--link {
       color: #F2F2F2; }
       .header__list--link:active {
-        color: #FD7792; }
+        color: #FEC260; }
     @media all and (min-width: 768px) {
       .header__list {
         display: flex;
@@ -358,7 +358,7 @@ a {
     .header__ssmm--icon {
       color: #F2F2F2; }
       .header__ssmm--icon:active {
-        color: #FD7792; }
+        color: #FEC260; }
     @media all and (min-width: 768px) {
       .header__ssmm {
         justify-content: flex-end;
