@@ -28,12 +28,6 @@
 	font-family: $special;
 	font-size: 18px;
 	margin-bottom: 10px;
-	@include tablet{
-		font-size: 22px;
-	}
-
-
-
 }
 
 @keyframes pop {
