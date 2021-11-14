@@ -485,7 +485,8 @@ a {
     margin-bottom: 10px;
     color: #55AE95; }
   .about__text {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-size: 18px; }
   .about__container {
     padding: 20px;
     max-width: 460px;
@@ -594,6 +595,8 @@ a {
     font-weight: bold;
     margin-bottom: 10px;
     color: #55AE95; }
+  .projects__text {
+    font-size: 18px; }
   .projects__adalab {
     font-family: "Fredoka One", cursive;
     color: #55AE95;
@@ -673,6 +676,8 @@ a {
     font-weight: bold;
     margin-bottom: 10px;
     color: #55AE95; }
+  .contact__text {
+    font-size: 18px; }
   .contact nav {
     align-self: center; }
   .contact__links {

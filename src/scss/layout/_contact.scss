@@ -8,6 +8,9 @@
 		@include sectionTitle();
 		color: $green;
 	}
+	&__text {
+	font-size: 18px;
+	}
 	& nav {
 		align-self: center;
 	}
