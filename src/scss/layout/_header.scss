@@ -15,7 +15,6 @@
 		}
 		@include tablet {
 			visibility: hidden;
-			background-color: $black;
 		}
 	}
 	&__nav {
@@ -40,7 +39,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 30px;
 		gap: 20px;
 		font-size: 22px;
 		color: $white;
