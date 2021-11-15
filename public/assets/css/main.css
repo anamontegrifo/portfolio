@@ -442,7 +442,7 @@ a {
       .hero__portrait {
         width: 210px;
         height: 210px;
-        margin-bottom: -60px;
+        margin-bottom: -50px;
         margin-right: -90px; } }
   .hero__article {
     grid-column: 1/3;
