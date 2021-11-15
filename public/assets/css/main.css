@@ -384,17 +384,17 @@ a {
     position: relative;
     gap: 10px; }
   .hero__click {
-    grid-column: 1/3;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 1/4;
     display: grid;
     grid-template-columns: 25px auto auto;
-    grid-template-rows: 25px 25px 1fr 1fr;
+    grid-template-rows: 25px 25px auto auto;
     gap: 7px;
     justify-items: flex-end;
     align-items: flex-end;
     align-self: flex-end;
     font-size: 12px;
-    width: 130px;
+    width: 110px;
     color: #FEC260; }
     .hero__click--1 {
       width: 20px;
@@ -416,13 +416,13 @@ a {
       animation: arrow3 2s infinite;
       align-self: center; }
   .hero__computer {
-    width: 100px;
-    height: 130px;
+    width: 80px;
+    height: 110px;
     grid-column: 2/4;
     grid-row: 2/5; }
   .hero__mac {
     position: absolute;
-    width: 100px;
+    width: 80px;
     filter: drop-shadow(2px -1px 3px #7d7d7d);
     cursor: pointer; }
   .hero__portrait {
